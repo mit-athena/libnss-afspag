@@ -1,0 +1,5 @@
+This is nss_afspag, an nsswitch module that assigns group names of the 
+form afspag-NNN to the fake groups that are created by AFS to represent 
+PAGs, so that they do not cause programs like groups to fail.
+
+To use it, add afspag to the group line in /etc/nsswitch.conf.

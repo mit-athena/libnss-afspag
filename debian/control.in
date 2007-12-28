@@ -1,0 +1,14 @@
+Source: libnss-afspag
+Section: debathena/libs
+Priority: optional
+Maintainer: Anders Kaseorg <andersk@mit.edu>
+Standards-Version: 3.7.2
+Build-Depends: @cdbs@
+
+Package: libnss-afspag
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}
+Description: nsswitch module to assign group names to AFS PAG groups
+ This nsswitch module assigns group names of the form afspag-NNN to
+ the fake groups that are created by AFS to represent PAGs, so that
+ they do not cause programs like groups to fail.
